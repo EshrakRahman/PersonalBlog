@@ -1,7 +1,10 @@
+import Nav from "./components/nav/Nav";
+import Home from "./pages/Home";
+
 export default function App() {
   return (
     <>
-      <h1 className="text-red-600 tp-1 font-bold">Hellow there...</h1>
+      <Home />
     </>
   );
 }
