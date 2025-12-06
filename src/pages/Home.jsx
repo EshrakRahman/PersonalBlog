@@ -1,9 +1,9 @@
-import Nav from "../components/nav/Nav";
+import Index from "../components/home";
 
 export default function Home() {
   return (
-    <>
-      <Nav />
-    </>
+    <div className="mx-5 mt-5 lg:max-w-[780px] lg:mx-auto lg:mt-5 max-w-full">
+      <Index />
+    </div>
   );
 }
