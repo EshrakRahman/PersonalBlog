@@ -2,17 +2,14 @@ import { useContext } from "react";
 import { ArticleContext } from "../../context/Articlecontext";
 import { formatDate } from "../utils/dateFormater";
 import Divider from "../common/Divider";
+import SingleLineDashed from "../common/SingleLineDashed";
 
 export default function LatestArticle() {
   const { articles } = useContext(ArticleContext);
   return (
     <>
       <div className="">
-        <h2 className="tp-2 text-neutral-700 mt-8">
-          Latest Articles{" "}
-          <span className="inline-block w-10 border-b-4 border-blue-500"></span>
-        </h2>
-
+        <SingleLineDashed text="Latest Articles" />
         {articles.slice(0, 5).map((article, index) => (
           <div key={index} className="mt-8 mb-6">
             <h3 className="tp-5 mb-2 text-neutral-700">{article.title}</h3>
