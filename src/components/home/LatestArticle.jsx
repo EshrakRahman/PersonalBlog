@@ -2,6 +2,7 @@ import { useContext } from "react";
 import { ArticleContext } from "../../context/Articlecontext";
 import { formatDate } from "../utils/dateFormater";
 import { Divider, SingleLineDashed } from "../common/index";
+import { Link } from "react-router";
 
 export default function LatestArticle() {
   const { articles } = useContext(ArticleContext);
@@ -18,12 +19,12 @@ export default function LatestArticle() {
           </div>
         ))}
         <div className="my-8">
-          <a
+          <Link
             className="tp-6 text-neutral-700 border-b-3 border-blue-500"
-            href=""
+            to="/blog"
           >
             View all articles
-          </a>
+          </Link>
         </div>
         <Divider />
       </div>

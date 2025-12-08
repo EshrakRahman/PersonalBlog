@@ -1,11 +1,10 @@
 import { useContext } from "react";
 
-import SingleLineDashed from "../common/SingleLineDashed";
 import { ArticleContext } from "../../context/Articlecontext";
 import { formatDate } from "../utils/dateFormater";
-import Divider from "../common/Divider";
+import { Divider, SingleLineDashed } from "../common";
 
-export default function MyArticles() {
+export default function MyArticlesContent() {
   const { articles } = useContext(ArticleContext);
 
   return (
