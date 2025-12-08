@@ -1,8 +1,7 @@
 import { useContext } from "react";
 import { ArticleContext } from "../../context/Articlecontext";
 import { formatDate } from "../utils/dateFormater";
-import Divider from "../common/Divider";
-import SingleLineDashed from "../common/SingleLineDashed";
+import { Divider, SingleLineDashed } from "../common/index";
 
 export default function LatestArticle() {
   const { articles } = useContext(ArticleContext);

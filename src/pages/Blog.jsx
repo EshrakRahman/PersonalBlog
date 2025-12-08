@@ -1,4 +1,4 @@
-import IndexBlog from "../components/blog/IndexBlog";
+import { IndexBlog } from "../components/blog/index";
 
 export default function Blog() {
   return (

@@ -1,7 +1,6 @@
-import Footer from "../common/Footer";
-import Header from "../home/Header";
 import Nav from "../nav/Nav";
-import MyArticles from "./MyArticles";
+import { MyArticles } from "./index";
+import { Footer } from "../common/index";
 
 export default function IndexBlog() {
   return (
