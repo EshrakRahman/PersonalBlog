@@ -36,7 +36,7 @@ export default function NewsletterContent() {
                 />
               </div>
               <button
-                className="px-10 py-4 tp-6 text-neutral-900 bg-blue-500 mt-5 rounded-lg"
+                className="px-10 py-4 tp-6 text-neutral-900 bg-blue-500 mt-5 rounded-lg hover:bg-blue-700 transition-colors duration-200 hover:cursor-pointer"
                 type="submit"
               >
                 Stay updated

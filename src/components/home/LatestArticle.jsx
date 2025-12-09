@@ -12,7 +12,11 @@ export default function LatestArticle() {
         <SingleLineDashed text="Latest Articles" />
         {articles.slice(0, 5).map((article, index) => (
           <div key={index} className="mt-8 mb-6">
-            <h3 className="tp-5 mb-2 text-neutral-700">{article.title}</h3>
+            <Link to={`/blog/${article.slug}`}>
+              <h3 className="tp-5 mb-2 text-neutral-700 hover:tp-5 hover:text-neutral-700 hover:opacity-70 hover:underline transition-colors duration-200 ">
+                {article.title}
+              </h3>
+            </Link>
             <p className="tp-8-italic text-neutral-600">
               {formatDate(article.publishedAt)}
             </p>
@@ -20,7 +24,7 @@ export default function LatestArticle() {
         ))}
         <div className="my-8">
           <Link
-            className="tp-6 text-neutral-700 border-b-3 border-blue-500"
+            className="tp-6 text-neutral-700 border-b-3 border-blue-500 hover:opacity-70 transition-opacity duration-150"
             to="/blog"
           >
             View all articles

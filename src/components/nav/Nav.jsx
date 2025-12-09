@@ -3,6 +3,7 @@ import menuIcon from "../../assets/images/icon-menu.svg";
 import menuIconClose from "../../assets/images/icon-menu-close.svg";
 import moonIcon from "../../assets/images/icon-moon.svg";
 import { useState } from "react";
+import { Link } from "react-router";
 
 export default function Nav() {
   const [mobileMenu, setMobileMenu] = useState(false);
@@ -27,21 +28,21 @@ export default function Nav() {
             <nav>
               <ul>
                 <li className="flex gap-5">
-                  <a className="tp-8  text-neutral-700  " href="">
+                  <Link className="tp-8  text-neutral-700  " to="/">
                     Home
-                  </a>
+                  </Link>
 
-                  <a className="tp-8  text-neutral-700  " href="">
+                  <Link className="tp-8  text-neutral-700  " to="/blog">
                     Blog
-                  </a>
+                  </Link>
 
-                  <a className="tp-8  text-neutral-700  " href="">
+                  <Link className="tp-8  text-neutral-700  " to="/about">
                     About
-                  </a>
+                  </Link>
 
-                  <a className="tp-8  text-neutral-700 " href="">
+                  <Link className="tp-8  text-neutral-700 " to="/newsletter">
                     Newsletter
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </nav>
@@ -86,30 +87,33 @@ export default function Nav() {
               <div className=" absolute left-[10%] top-[120%] rounded-lg p-4 bg-neutral-0 shadow-xl w-full max-w-[347px]">
                 <ul>
                   <li className="flex flex-col">
-                    <a
+                    <Link
                       className="tp-7 pt-2 text-neutral-900 border-b border-neutral-200 pb-4"
-                      href=""
+                      to="/"
                     >
                       Home
-                    </a>
+                    </Link>
 
-                    <a
+                    <Link
                       className="tp-7 pt-2 text-neutral-900 border-b border-neutral-200 pb-4"
-                      href=""
+                      to="/blog"
                     >
                       Blog
-                    </a>
+                    </Link>
 
-                    <a
+                    <Link
                       className="tp-7 pt-2 text-neutral-900 border-b border-neutral-200 pb-4"
-                      href=""
+                      to="/about"
                     >
                       About
-                    </a>
+                    </Link>
 
-                    <a className="tp-7 pt-2 text-neutral-900 pb-4" href="">
+                    <Link
+                      className="tp-7 pt-2 text-neutral-900 pb-4"
+                      to="/newsletter"
+                    >
                       Newsletter
-                    </a>
+                    </Link>
                   </li>
                 </ul>
               </div>
