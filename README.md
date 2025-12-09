@@ -1,16 +1,124 @@
-# React + Vite
+# 🎨 **Personal Blog Website — Frontend Mentor Challenge**
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![Personal Blog Preview](./preview.jpg)
 
-Currently, two official plugins are available:
+A clean, responsive, and markdown-powered personal blog built with **React**, **React Router**, and **Tailwind CSS**.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+🔗 **Live Demo:** [https://eshrakblog.netlify.app](https://eshrakblog.netlify.app)
+🔗 **Portfolio:** [https://eshrak.me](https://eshrak.me)
+🔗 **GitHub Repo:** [https://github.com/EshrakRahman/PersonalBlog](https://github.com/EshrakRahman/PersonalBlog)
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🌟 **Overview**
 
-## Expanding the ESLint configuration
+This project is my submission to the **Frontend Mentor – Personal Blog Challenge**.
+It features a fully responsive blog platform with:
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- Dynamic article pages
+- Markdown rendering
+- Modern typography
+- Smooth UI transitions
+- Scalable component architecture
+
+The goal was to create a **minimal, fast, and elegant reading experience**.
+
+---
+
+## 🧰 **Tech Stack**
+
+| Technology            | Purpose                               |
+| --------------------- | ------------------------------------- |
+| ⚛️ **React**          | Component-driven UI                   |
+| 🛣 **React Router**    | Dynamic routing `/blog/:slug`         |
+| 🎨 **Tailwind CSS**   | Utility-first styling for scalable UI |
+| ✍️ **React Markdown** | Render Markdown safely                |
+| ⚡ **Vite**           | Fast development & build tooling      |
+| 🌐 **Netlify**        | Deployment & hosting                  |
+
+---
+
+## 🖼 **UI Preview**
+
+---
+
+## ✨ **Features**
+
+### 📝 Markdown-Based Blog Posts
+
+Write posts easily using Markdown — clean, simple, scalable.
+
+### 🧭 Dynamic Routing
+
+Each article has its own URL using slugs:
+
+```
+/blog/my-first-post
+```
+
+### 📚 Centralized Data with Context
+
+Global article state using **React Context** for easy access.
+
+### 🎨 Tailwind UI Polish
+
+- Elegant spacing & typography
+- Hover & focus states for links
+- Dashed section titles for visual separation
+- Reusable UI components (Divider, SingleLineDashed, etc.)
+
+### 📱 Fully Responsive
+
+Optimized for all devices — desktop, tablet, and mobile.
+
+---
+
+## 🧠 **What I Learned**
+
+- Structuring reusable React components
+- Handling dynamic routes with `useParams()`
+- Customizing React Markdown components (links, headings)
+- Tailwind v4 typography, spacing, and transitions
+- Planning scalable folder & context architecture
+
+---
+
+## ⚙️ **Installation & Setup**
+
+```bash
+git clone https://github.com/EshrakRahman/PersonalBlog.git
+cd PersonalBlog
+npm install
+npm run dev
+```
+
+Build for production:
+
+```bash
+npm run build
+npm run preview
+```
+
+---
+
+## 🚀 **Planned Improvements**
+
+- 🌙 Dark mode
+- 🔎 Search & filtering
+- 🏷 Tag/categories for posts
+- 🧭 Breadcrumb navigation
+- 🔄 Framer Motion animations
+- 🗄 Switch from static JSON → CMS (Sanity / Contentful)
+
+---
+
+## 👨‍💻 **Author**
+
+**Eshrak Rahman**
+Frontend Developer
+
+🌐 Portfolio — [https://eshrak.me](https://eshrak.me)
+🐙 GitHub — [https://github.com/EshrakRahman](https://github.com/EshrakRahman)
+🎨 Frontend Mentor — [https://www.frontendmentor.io/profile/EshrakRahman](https://www.frontendmentor.io/profile/EshrakRahman)
+
+---
